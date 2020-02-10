@@ -14,6 +14,12 @@ namespace WebApplication22.Controllers
         {
             return View();
         }
+        
+        [HttpPost]
+        public IActionResult SubmitForm()
+        {
+            return View("Index");
+        }
 
         public IActionResult Privacy()
         {
