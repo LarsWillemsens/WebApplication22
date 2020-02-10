@@ -11,7 +11,7 @@
 
 <form asp-controller="Home" asp-action="SubmitForm" method="post">
     <div class="form-group">
-        <label asp-for="Text"></label>
-        <input asp-for="Text" class="form-control">
+        <label @* for="text" *@ asp-for="Text"></label>
+        <input @* id="text" name="Text" *@ asp-for="Text" class="form-control">
     </div>
 </form>
